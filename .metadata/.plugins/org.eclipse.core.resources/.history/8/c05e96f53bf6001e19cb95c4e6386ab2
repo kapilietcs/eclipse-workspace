@@ -1,0 +1,35 @@
+package TestProgramming;
+
+import java.util.*;
+
+public class JavaProgramming {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String[] strAr= {"kapil","Nikhil","Manas","ShyamJi"};
+/*for(int i=0;i<strAr.length;i++) {
+	System.out.println(strAr[i]);
+	
+}
+System.out.println("=============================================");
+for (String str:strAr) {
+System.out.println(str);
+}*/
+Boolean x =false;
+String kr="kapil";
+for(int j=0;j<strAr.length;j++) {
+if(kr.equals(strAr[j])) {
+	kr=strAr[j];
+	x=true;
+	break;
+}	
+}
+if(x) {
+System.out.println("String Search worked as expected   ");
+}else {
+	System.out.println("String Search NOT worked as expected");
+}
+	
+}
+}
+
